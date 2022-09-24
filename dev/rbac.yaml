@@ -23,10 +23,14 @@ spec:
   # TODO: Replace with group?
   bindings:
   - members:
-    - member: user:yuwenma@google.com
+    - memberFrom:
+        serviceAccountRef:
+          name: cnrm-controller-manager-packagename
     role: roles/editor
   - members:
-    - member: user:yuwenma@google.com
+    - memberFrom:
+        serviceAccountRef:
+          name: cnrm-controller-manager-packagename
     role: roles/container.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
