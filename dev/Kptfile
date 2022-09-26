@@ -20,8 +20,3 @@ upstreamLock:
     commit: 7bed035bbf288e6070f215c3916383bd7d3a527c
 info:
   description: Porch dogfooding sample KCC
-pipeline:
-  mutators:
-  - image: gcr.io/kpt-fn-demo/set-name-prefix
-  - image: gcr.io/kpt-fn-demo/generator-configconnectorcontext
-  - image: gcr.io/kpt-fn-demo/bind-gcp-resources
