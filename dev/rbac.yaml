@@ -14,7 +14,7 @@
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPartialPolicy
 metadata: # kpt-merge: config-control/packagename-editors
-  name: packagename-editors
+  name: dev-editors
   namespace: config-control
   annotations:
     cnrm.cloud.google.com/blueprint: 'kpt-pkg-fn'
@@ -31,4 +31,4 @@ spec:
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
     kind: Project
-    name: packagename
+    name: dev
