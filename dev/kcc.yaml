@@ -57,7 +57,7 @@ spec:
     kind: IAMServiceAccount
     name: dev-cc-robot
   serviceAccountRef:
-    name: cnrm-controller-manager-packagename
+    name: cnrm-controller-manager-dev
     namespace: cnrm-system
 ---
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
@@ -84,11 +84,11 @@ metadata: # kpt-merge: config-control/packagename-cnrm:cnrm-viewer
   name: dev-cnrm:cnrm-viewer
   namespace: config-control
   annotations:
-    internal.kpt.dev/upstream-identifier: 'rbac.authorization.k8s.io|RoleBinding|config-control|packagename-cnrm:cnrm-viewer'
+    internal.kpt.dev/upstream-identifier: "rbac.authorization.k8s.io|RoleBinding|config-control|packagename-cnrm:cnrm-viewer"
 subjects:
 - kind: ServiceAccount
   namespace: cnrm-system
-  name: cnrm-controller-manager-packagename
+  name: cnrm-controller-manager-dev
 roleRef:
   kind: ClusterRole
   name: cnrm-viewer
