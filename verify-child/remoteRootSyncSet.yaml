@@ -2,7 +2,7 @@ apiVersion: config.porch.kpt.dev/v1alpha1
 kind: RemoteRootSyncSet
 metadata: # kpt-merge: example/porch-install
   name: porch-install
-  namespace: example
+  namespace: dev
   annotations:
     internal.kpt.dev/upstream-identifier: 'config.porch.kpt.dev|RemoteRootSyncSet|example|porch-install'
 spec:
