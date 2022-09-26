@@ -31,15 +31,6 @@ metadata: # kpt-merge: packagename/configconnectorcontext.core.cnrm.cloud.google
 spec:
   googleServiceAccount: cc-robot@dev-yuwenma-gke-catalyst-ryh5.iam.gserviceaccount.com
 ---
-apiVersion: v1
-kind: ServiceAccount
-metadata: # kpt-merge: cnrm-system/cnrm-controller-manager-packagename
-  name: cnrm-controller-manager-packagename
-  namespace: cnrm-system
-  annotations:
-    config.kubernetes.io/local-config: generated
-    internal.kpt.dev/upstream-identifier: "|ServiceAccount|cnrm-system|cnrm-controller-manager-packagename"
----
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMServiceAccount
 metadata: # kpt-merge: config-control/packagename-cc-robot
