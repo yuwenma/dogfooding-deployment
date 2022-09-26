@@ -16,7 +16,6 @@ spec:
       sourceFormat: unstructured
       git:
         auth: none
-        repo: http://github.com/yuwenma/porch-dogfooding-infra.git
-        branch: v0.0.9
+        repo: http://github.com/yourldap/kpt.git
         # branch: main # YOUR FEATURE BRANCH i.e. verify-workload-identity
-        dir: install-porch # Please update this to contain your local builds
+        dir: porch/deployments/porch # Please update this to contain your local builds
