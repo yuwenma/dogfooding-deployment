@@ -15,7 +15,7 @@ apiVersion: container.cnrm.cloud.google.com/v1beta1
 kind: ContainerCluster
 metadata: # kpt-merge: binding/packagename
   name: us-central1
-  namespace: binding
+  namespace: dev
   annotations:
     cnrm.cloud.google.com/remove-default-node-pool: "true"
     cnrm.cloud.google.com/state-into-spec: absent
@@ -33,7 +33,7 @@ apiVersion: container.cnrm.cloud.google.com/v1beta1
 kind: ContainerNodePool
 metadata: # kpt-merge: binding/packagename-default
   name: us-central1-default
-  namespace: binding
+  namespace: dev
   annotations:
     internal.kpt.dev/upstream-identifier: 'container.cnrm.cloud.google.com|ContainerNodePool|binding|packagename-default'
     cnrm.cloud.google.com/blueprint: 'kpt-pkg-fn'
