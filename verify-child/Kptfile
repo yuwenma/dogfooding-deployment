@@ -19,7 +19,3 @@ upstreamLock:
     commit: d45a0423d39dc571a48377cee22f0e6acc8ffe84
 info:
   description: Porch dogfooding child installation
-pipeline:
-  mutators:
-  - image: gcr.io/kpt-fn/set-namespace:v0.4.1
-    configPath: package-context.yaml
