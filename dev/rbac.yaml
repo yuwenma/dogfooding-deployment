@@ -14,7 +14,7 @@
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPartialPolicy
 metadata: # kpt-merge: config-control/packagename-editors
-  name: dev-editors
+  name: packagename-editors
   namespace: config-control
   annotations:
     cnrm.cloud.google.com/blueprint: 'kpt-pkg-fn'
@@ -23,16 +23,12 @@ spec:
   # TODO: Replace with group?
   bindings:
   - members:
-    - memberFrom:
-        serviceAccountRef:
-          name: dev-cc-robot
+    - member: user:yuwenma@google.com
     role: roles/editor
   - members:
-    - memberFrom:
-        serviceAccountRef:
-          name: dev-cc-robot
+    - member: user:yuwenma@google.com
     role: roles/container.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
     kind: Project
-    name: dev
+    name: packagename
