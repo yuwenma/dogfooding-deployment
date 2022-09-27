@@ -2,7 +2,7 @@ apiVersion: config.porch.kpt.dev/v1alpha1
 kind: RemoteRootSyncSet
 metadata: # kpt-merge: example/porch-install
   name: porch-install
-  namespace: dev
+  namespace: example
   annotations:
     internal.kpt.dev/upstream-identifier: 'config.porch.kpt.dev|RemoteRootSyncSet|example|porch-install'
 spec:
@@ -10,7 +10,7 @@ spec:
   - apiVersion: container.cnrm.cloud.google.com/v1beta1
     kind: ContainerCluster
     name: us-central1
-    namespace: dev
+    namespace: example
   template:
     sourceFormat: unstructured
     oci:
