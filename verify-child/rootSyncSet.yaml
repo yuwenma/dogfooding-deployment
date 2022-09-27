@@ -10,7 +10,7 @@ spec:
   - apiVersion: container.cnrm.cloud.google.com/v1beta1
     kind: ContainerCluster
     name: us-central1
-    namespace: example
+    namespace: dev
   template:
     spec:
       sourceFormat: unstructured
